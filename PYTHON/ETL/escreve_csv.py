@@ -11,7 +11,7 @@ cidades = {
 }
 
 # Criação do arquivo CSV
-with open('vitimas_de_covid_brasil_2020.csv', mode='w', newline='') as csv_file:
+with open('vitimas_de_covid_brasil_2020.csv', mode='w', newline='', encoding='utf-8') as csv_file:
     fieldnames = ['id', 'cidade', 'estado', 'numero_de_vitimas']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
